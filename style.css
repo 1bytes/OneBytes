@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+html,body{
+    height:100%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #666;
+    text-align: center;
+    
+    
+}
+.paralax1{
+  background: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.paralax2{
+    background: url(assets/paralax2.jpg);
+    min-height: 60%;
+}
+.paralax3{
+    background: url(assets/paralax3.jpg);
+    min-height: 60%;
+}
+.paralax4{
+    background: url(assets/paralax4.jpg);
+    min-height: 60%;
+}
+.paralax5{
+    background: url(assets/paralax5.jpg);
+    min-height: 60%;
+}
+.paralax2,.paralax3,.paralax4,.paralax5{
+    position: relative;
+    opacity: .75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.heading{
+    position: absolute;
+    color: #ffffff;
+    font-size: 550%;
+    top: 38%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 0 0 10px #000;
+}
+.heading-sm{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: #ffffff;
+    font-size: 250%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #000000;
+}
+
+section{
+    overflow: auto;
+    padding: 50px 80px;
+}
+.dark{
+    overflow: auto;
+    padding: 50px 80px;
+    background-color: dimgray;
+    color: #ffffff;
+}
+
+@media (max-width: 768px){
+    .heading{
+        font-size: 250%;
+    }
+    .heading-sm{
+        font-size: 180%;
+    }
+}
+
+{
+  animation: type 3s steps(11);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 22ch;
+}
+@keyframes type{
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 11ch;
+  }
+}
